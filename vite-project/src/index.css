@@ -1,0 +1,126 @@
+:root {
+  --pink: #f32688;
+  --pink-light: #ff67b4;
+  --pink-dark: #ba0059;
+  --green: #39C58A;
+  --green-light: #74f9ba;
+  --white: #fff;
+  --green-dark: #00935d;
+  font-family: omnes-pro, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+nav {
+  position: relative;
+  background-color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+ul{
+  padding: 0;
+  display: flex;
+}
+li{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white
+}
+.logo {
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+.flex{
+  display: flex;
+}
+
+button {
+  height: 48px;
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.container {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media screen and (max-width: 1536px) {
+  .container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+h1{
+  font-size: 72px; 
+   font-weight: bold;
+  color: #fff;
+}
+h2{
+  font-size: 48px; 
+   font-weight: bold;
+  color: #fff;
+}
+.gradient {
+  
+  background: -webkit-linear-gradient(25deg,var(--pink-light),var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dutch-flag{
+  background: rgb(169,31,50);
+  background: linear-gradient(25deg,rgba(169,31,50,1), rgba(255,255,255,1), rgba(30,71,133,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.txt-pink{
+  color : var(--pink);
+}

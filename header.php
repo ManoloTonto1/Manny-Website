@@ -26,18 +26,7 @@
     <span id="notification_error"></span>
     </div>
 <!-- Navbar (sit on top) -->
-<div data-aos="fade-down" class="w3-top hide-overflow">
-    <!-- navbar-->
-  <div id="navbar"class="navbar w3-bar w3-wide w3-padding w3-card">
-    <a href="#home" id="home-btn" class="btn-home w3-bar-item">Manuel Lopez</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class=" btn-grad">Projects</a>
-      <a href="#about" class="btn-grad">About</a>
-      <a href="#contact" class="btn-grad">Contact</a>
-    </div>
-  </div>
-</div>
+
 
 
 <script src="hide-home.js"></script>
