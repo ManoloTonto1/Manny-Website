@@ -22,7 +22,7 @@ function About() {
 								</span>
                     
 							</p>
-							<button className="btn btn-theme about__btn-theme">Projects</button>
+							<a className="btn btn-theme about__btn-theme" href='#projects'>Projects</a>
 						</div>
 						<div className="about__skill-info secondary-bg">
 							<h3 className="heading-quaternary about__heading-quaternary secondary-bg">

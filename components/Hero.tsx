@@ -12,8 +12,10 @@ function Hero() {
 							{information.hero.text}
 						</span>
 					</h1>
-					<button className="btn btn-theme home-hero__btn-theme">Projects</button>
-					<button className="btn btn-inv home-hero__btn-theme">Contact</button>
+					<div className='flex-container'>
+						<a className="btn btn-theme home-hero__btn-theme" href="#projects" >Projects</a>
+						<a className="btn btn-inv home-hero__btn-theme" href="#contact">Contact</a>
+					</div>
 				</div>
 			</div>
 		</section>
