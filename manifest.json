@@ -1,12 +1,12 @@
 {
-  "_chunk-08454f8d.js": {
-    "file": "assets/chunks/chunk-08454f8d.js"
-  },
   "_chunk-3c3bf25d.js": {
     "file": "assets/chunks/chunk-3c3bf25d.js"
   },
   "_chunk-e104bd84.js": {
     "file": "assets/chunks/chunk-e104bd84.js"
+  },
+  "_chunk-e8f26673.js": {
+    "file": "assets/chunks/chunk-e8f26673.js"
   },
   "node_modules/slick-carousel/slick/ajax-loader.gif": {
     "file": "assets/static/ajax-loader.e7b44c86.gif",
@@ -22,9 +22,9 @@
       "renderer/_error.page.tsx",
       "renderer/_default.page.client.tsx"
     ],
-    "file": "assets/entries/entry-server-routing.ed2f3ead.js",
+    "file": "assets/entries/entry-server-routing.bba6a7b6.js",
     "imports": [
-      "_chunk-08454f8d.js"
+      "_chunk-e8f26673.js"
     ],
     "isEntry": true,
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js"
@@ -35,15 +35,15 @@
       "renderer/_error.page.tsx",
       "renderer/_default.page.client.tsx"
     ],
-    "file": "assets/entries/entry-client-routing.124f80c8.js",
+    "file": "assets/entries/entry-client-routing.f30834ef.js",
     "imports": [
-      "_chunk-08454f8d.js"
+      "_chunk-e8f26673.js"
     ],
     "isEntry": true,
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
   },
   "pages/index/index.page.css": {
-    "file": "assets/static/index.page.1f73f9f2.css",
+    "file": "assets/static/index.page.13a86e26.css",
     "src": "pages/index/index.page.css"
   },
   "pages/index/index.page.tsx": {
@@ -52,9 +52,9 @@
       "assets/static/slick.12459f22.svg"
     ],
     "css": [
-      "assets/static/index.page.1f73f9f2.css"
+      "assets/static/index.page.13a86e26.css"
     ],
-    "file": "assets/entries/pages_index_index.page.4ca73b87.js",
+    "file": "assets/entries/pages_index_index.page.a3703c1a.js",
     "imports": [
       "_chunk-e104bd84.js",
       "_chunk-3c3bf25d.js"
@@ -64,14 +64,14 @@
     "src": "pages/index/index.page.tsx"
   },
   "renderer/_default.page.client.css": {
-    "file": "assets/static/default.page.client.3fe5119c.css",
+    "file": "assets/static/default.page.client.5da34521.css",
     "src": "renderer/_default.page.client.css"
   },
   "renderer/_default.page.client.tsx": {
     "css": [
-      "assets/static/default.page.client.3fe5119c.css"
+      "assets/static/default.page.client.5da34521.css"
     ],
-    "file": "assets/entries/renderer_default.page.client.c86151f8.js",
+    "file": "assets/entries/renderer_default.page.client.8a32f623.js",
     "imports": [
       "_chunk-e104bd84.js",
       "_chunk-3c3bf25d.js"

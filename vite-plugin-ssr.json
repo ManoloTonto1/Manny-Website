@@ -2,7 +2,7 @@
   "version": "0.4.123",
   "usesClientRouter": false,
   "manifestKeyMap": {},
-  "baseServer": "/",
-  "baseAssets": "/",
+  "baseServer": "/Manny-Website/",
+  "baseAssets": "/Manny-Website/",
   "includeAssetsImportedByServer": false
 }
