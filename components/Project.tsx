@@ -1,20 +1,20 @@
 import React from 'react';
 
 export type ProjectProps = {
-    name: string;
+    title: string;
     description: string;
-    liveLink: string;
-    codeLink: string;
-    image: string;
+    liveLink?: string;
+    codeLink?: string;
+    image?: string;
 }
 function Project(props: ProjectProps) {
 	return (
 		<div className="projects__list-item-details">
 			<div className="projects__list-item-img-cont">
-				<img src={props.image ? props.image: './assets/placeholder.png'} alt={`image of ${props.name}`} className="projects__list-item-img" />
+				<img src={props.image ? props.image: '/placeholder.png'} alt={`image of ${props.title}`} className="projects__list-item-img" />
 			</div>
 			<h3 className="heading-tertiary projects__list-item-heading-tertiary">
-				{props.name}
+				{props.title}
 			</h3>
     
 			<p className="text-primary projects__list-item-text-primary">
@@ -32,7 +32,9 @@ function Project(props: ProjectProps) {
 					target='_blank'
 					rel='noopener noreferrer'
 					href={props.codeLink}
-				>Code Link</a>
+				>
+					Code Link
+				</a>
 			)}
 		</div>
 	);

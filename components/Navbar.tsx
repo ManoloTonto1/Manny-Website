@@ -1,6 +1,7 @@
 import React from 'react';
-import information from '../assets/information.json';
-import { NavbarLink, ResponsiveNavbarLink } from './NavbarLink';
+import {information} from './information';
+import { NavbarLink, NavbarLinkProps, ResponsiveNavbarLink } from './NavbarLink';
+
 function Navbar() {
 	return (
 		<header className="main-header">
@@ -14,12 +15,12 @@ function Navbar() {
 			</div>
 			<nav className="main-header__navigation">
 				<ul className="main-header__navigation-links">
-					{information.navbar.links.map((link: unknown) => {
+					{information.navbar.links.map((link: NavbarLinkProps) => {
 						return (
 							<NavbarLink
 								key={link.name}
 								href={link.href}
-								text={link.name}
+								name={link.name}
 							/>
 						);
 					})
@@ -35,19 +36,18 @@ function Navbar() {
 
 				</div>
 				<ul className="main-header__sm-menu-links">
-					{information.navbar.links.map((link: unknown) => {
+					{information.navbar.links.map((link: NavbarLinkProps) => {
 						return (
 							<ResponsiveNavbarLink
 								key={link.name}
 								href={link.href}
-								text={link.name}
+								name={link.name}
 							/>
 						);
 					})
 					}
 				</ul>
 			</div>
-			{/* <button className="btn btn-theme btn-sm">Download CV</button>  */}
 		</header>
 	);
 }

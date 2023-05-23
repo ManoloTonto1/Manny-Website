@@ -1,5 +1,11 @@
 import React from 'react';
-import information from '../assets/information.json';
+import { information } from './information';
+
+export type Skill = {
+	name: string;
+	icon?: string;
+}
+
 function About() {
 
 	return (
@@ -29,7 +35,7 @@ function About() {
                   My Skills
 							</h3>
 							<ul className="about__skills secondary-bg">
-								{information.skills.map((skill) => {
+								{information.skills.map((skill: Skill) => {
 									return (
 										<li className="about__skill" key={skill.name}>{skill.name}</li>
 									);

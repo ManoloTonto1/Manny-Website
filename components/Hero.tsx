@@ -1,5 +1,5 @@
 import React from 'react';
-import information from '../assets/information.json';
+import {information} from './information';
 function Hero() {
 	return (
 		<section id="home-hero" className="home-hero">

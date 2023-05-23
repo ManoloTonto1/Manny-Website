@@ -1,8 +1,10 @@
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
 import React, { useEffect } from 'react';
-import information from '../assets/information.json';
+import {information} from './information';
 import Slider from 'react-slick';
+import { Skill } from './About';
+
 const settings = {
 	dots: false,
 	infinite: true,
@@ -36,15 +38,17 @@ const SkillCarousel = () => {
 				className='skills-showcase__list'
 				arrows={false}
 			>
-				{information.skills.map((skill) => {
-					if (!skill.icon)
-						return null;
+				{information.skills.map((skill: Skill) => {
 					return (
-						<div key={skill.name}>
-							<div className="skills-showcase__list-item">
-								<i className={skill.icon}></i>
+						
+						skill.icon ?
+							<div key={skill.name}>
+								<div className="skills-showcase__list-item">
+									<i className={skill.icon}></i>
+								</div>
 							</div>
-						</div>
+							: null
+						
 					);
 				})}
 			</Slider>

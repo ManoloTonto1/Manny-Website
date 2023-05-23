@@ -1,5 +1,5 @@
 import React from 'react';
-import information from '../assets/information.json';
+import {information} from './information';
 import Project, { ProjectProps } from './Project';
 function Projects() {
 	return (
@@ -15,7 +15,7 @@ function Projects() {
 						{information.projects.map((project: ProjectProps, index: number) => {
 							if (index % 2 != 0) {
 								return (
-									<div key={project.name} className="projects__list-item projects__list-item--inv">
+									<div key={project.title} className="projects__list-item projects__list-item--inv">
 										<Project
 											{...project}
 										/>
@@ -23,7 +23,7 @@ function Projects() {
 								);
 							}
 							return (
-								<div key={project.name} className="projects__list-item">
+								<div key={project.title} className="projects__list-item">
 									<Project
 										{...project}
 									/>
