@@ -30,7 +30,7 @@ export const information = {
 	},
 	'projects': [
 		{
-			'image': '/projects/tb.png',
+			'image': './projects/tb.png',
 			'title': 'Theater Baget',
 			'description': 'Theater Baget is my team\'s project for the 4th semester at De Haagse Hogeschool, this was made with React, TypeScript, dotnet, and SQLServer',
 			'liveLink': 'https://manolotonto1.github.io/Theater-Baget/',

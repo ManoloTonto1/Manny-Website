@@ -11,7 +11,7 @@ function Project(props: ProjectProps) {
 	return (
 		<div className="projects__list-item-details">
 			<div className="projects__list-item-img-cont">
-				<img src={props.image ? props.image: '/placeholder.png'} alt={`image of ${props.title}`} className="projects__list-item-img" />
+				<img src={props.image ? props.image: './placeholder.png'} alt={`image of ${props.title}`} className="projects__list-item-img" />
 			</div>
 			<h3 className="heading-tertiary projects__list-item-heading-tertiary">
 				{props.title}
