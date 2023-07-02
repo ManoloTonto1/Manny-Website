@@ -7,6 +7,7 @@ import Projects from '../../components/Projects';
 export { Page };
 
 function Page() {
+
 	return (
 		<>
 			<Hero />

@@ -1,7 +1,11 @@
 import React from 'react';
 import {information} from './information';
-import Project, { ProjectProps } from './Project';
+import Project from './Project';
+import { usePageContext } from '../renderer/usePageContext';
+import { Repo } from '../pages/index/index.page.server';
 function Projects() {
+	const pagectx = usePageContext();
+	console.log(pagectx);
 	return (
 		<section id="projects" className="projects main-section">
 			<div className="main-container">
@@ -12,18 +16,21 @@ function Projects() {
 				</h2>
 				<div className="main-section__content">
 					<div className="projects__list">
-						{information.projects.map((project: ProjectProps, index: number) => {
+						{pagectx.pageProps.repos.map((project: Repo, index: number) => {
 							if (index % 2 != 0) {
 								return (
-									<div key={project.title} className="projects__list-item projects__list-item--inv">
+									<div key={project.name} className="projects__list-item projects__list-item--inv">
 										<Project
+										
+										
+											
 											{...project}
 										/>
 									</div>
 								);
 							}
 							return (
-								<div key={project.title} className="projects__list-item">
+								<div key={project.name} className="projects__list-item">
 									<Project
 										{...project}
 									/>

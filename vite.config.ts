@@ -4,7 +4,7 @@ import { UserConfig } from 'vite';
 
 const config: UserConfig = {
 	plugins: [react(), ssr({ prerender: true })],
-	base: '/Manny-Website/',
+	base: '/Manny-Website/' ,
 	ssr: {
 		noExternal: ['magicscroll','slick-carousel','react-slick', 'enquire.js']
 	}
