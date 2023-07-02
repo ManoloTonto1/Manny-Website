@@ -8,12 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 export const isProduction = process.env.NODE_ENV === 'production';
 startServer();
-const productionCode = {
-	base: '/Manny-Website/' ,
-	ssr: {
-		noExternal: ['magicscroll','slick-carousel','react-slick', 'enquire.js']
-	}
-};
+
 async function startServer() {
 	const app = express();
 
@@ -28,8 +23,7 @@ async function startServer() {
 			await vite.createServer({
 				root,
 				server: { middlewareMode: true },
-				base: productionCode.base,
-				ssr:  productionCode.ssr 
+
 			})
 		).middlewares;
 		app.use(viteDevMiddleware);

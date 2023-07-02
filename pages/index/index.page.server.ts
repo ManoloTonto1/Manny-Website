@@ -15,11 +15,11 @@ async function onBeforeRender(pageContext: any) {
 	// `.page.server.js` files always run in Node.js; we could use SQL/ORM queries here.
 	const response = await fetch('https://api.github.com/users/ManoloTonto1/repos?per_page=100', {
 		headers: {
-			Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
+			Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`
 		}
 	});
-	console.log(process.env.GITHUB_TOKEN);
 	const repos = await response.json();
+	console.log(repos);
 	let _repos: Repo[] = repos.map((repo: any) => {
 		if (repo.fork === true) {
 			return;
