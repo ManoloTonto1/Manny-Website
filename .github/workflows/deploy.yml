@@ -18,12 +18,13 @@ jobs:
 
       - name: Install deps
         run: npm ci
-
-      - name: Build site
-        run: npm run build
+        
       - name: Add env variables
         run: |
           echo "${{secrets.ENV}}" > .env          
+
+      - name: Build site
+        run: npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
