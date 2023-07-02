@@ -18,10 +18,10 @@ jobs:
 
       - name: Install deps
         run: npm ci
-        
+
       - name: Add env variables
         run: |
-          echo "${{secrets.ENV}}" > .env          
+          echo ${{secrets.ENV}} > .env          
 
       - name: Build site
         run: npm run build
